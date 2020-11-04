@@ -1,0 +1,9 @@
+D:\Fresher\Vs\MISA.CukCuk\MISA.CukCuk\MISA.CukCuk\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Fresher\Vs\MISA.CukCuk\MISA.CukCuk\MISA.CukCuk\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Fresher\Vs\MISA.CukCuk\MISA.CukCuk\MISA.CukCuk\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Fresher\Vs\MISA.CukCuk\MISA.CukCuk\MISA.CukCuk\obj\Debug\netcoreapp3.1\MISA.CukCuk.csprojAssemblyReference.cache
+D:\Fresher\Vs\MISA.CukCuk\MISA.CukCuk\MISA.CukCuk\obj\Debug\netcoreapp3.1\MISA.CukCuk.AssemblyInfoInputs.cache
+D:\Fresher\Vs\MISA.CukCuk\MISA.CukCuk\MISA.CukCuk\obj\Debug\netcoreapp3.1\MISA.CukCuk.AssemblyInfo.cs
+D:\Fresher\Vs\MISA.CukCuk\MISA.CukCuk\MISA.CukCuk\obj\Debug\netcoreapp3.1\MISA.CukCuk.RazorTargetAssemblyInfo.cache
+D:\Fresher\Vs\MISA.CukCuk\MISA.CukCuk\MISA.CukCuk\obj\Debug\netcoreapp3.1\staticwebassets\MISA.CukCuk.StaticWebAssets.Manifest.cache
+D:\Fresher\Vs\MISA.CukCuk\MISA.CukCuk\MISA.CukCuk\obj\Debug\netcoreapp3.1\staticwebassets\MISA.CukCuk.StaticWebAssets.xml

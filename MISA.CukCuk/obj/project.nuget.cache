@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "UqWZc8cSWOrCGdPWrDeYdC7FcrZyoOhO7my0Qz3rlI9UJ040ZJIVI8Twy69EsCsjfNBcOLANU+ih8yoYAPxR6Q==",
+  "success": true,
+  "projectFilePath": "D:\\Fresher\\Vs\\MISA.CukCuk\\MISA.CukCuk\\MISA.CukCuk\\MISA.CukCuk.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lthai\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}
