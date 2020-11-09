@@ -1,0 +1,47 @@
+﻿.form-login {
+    width: 300px;
+    margin: auto;
+}
+
+p.title {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: aquamarine;
+}
+
+span.label {
+    font-size: 20px;
+}
+
+input {
+    width: 200px;
+    height: 23px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+    input#btnLogin, input#btnRegister {
+        width: 100px;
+        height: 36px;
+        margin-left: 49px;
+    }
+
+    input#txtPassword {
+        margin-left: 10px;
+    }
+
+    input#txtUsername {
+        margin-left: 6px;
+    }
+
+.button {
+}
+
+input#btnRegister {
+    margin-left: 4px;
+}
+
+.button {
+    display: flex;
+}
