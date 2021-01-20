@@ -1,0 +1,115 @@
+﻿/**
+    Hàm dùng chung cho mọi trang
+*/
+body {
+    font-family: GoogleSans-Regular;
+    font-size: 13px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.VND {
+    position: absolute;
+    right: 35px;
+    bottom: 151px;
+}
+
+.d-hr {
+    width: 100px;
+    height: 4px;
+    background-color: #01B075;
+    margin-bottom: 24px;
+}
+/**
+    Định nghĩa font chữ 
+*/
+@font-face {
+    font-family: 'GoogleSans-Black';
+    src: url('/content/font/GoogleSans-Black.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'GoogleSans-Bold';
+    src: url('/content/font/GoogleSans-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'GoogleSans-Regular';
+    src: url('/content/font/GoogleSans-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'GoogleSans-Thin';
+    src: url('/content/font/GoogleSans-Thin.otf') format('opentype');
+}
+/*
+    Các div chứa các thẻ cần cùng dòng 
+*/
+.d-same-row {
+    display: flex;
+}
+/*
+    Căn chữ
+*/
+.text-align-center {
+    text-align: center !important;
+}
+
+.text-align-right {
+    text-align: right !important;
+    padding-right: 16px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.main {
+    display: flex;
+}
+/*
+    Css cho các label 
+*/
+.d-label {
+    font-size: 13px;
+    color: #000000;
+    margin-bottom: 4px;
+    display: block;
+    margin-top: 10px;
+}
+
+.first.d-label {
+    margin-top: 0;
+}
+
+.d-label span {
+    color: red;
+}
+/*
+    Tạo dấu ba chấm cho các cột trong table có nhiều text vượt qua một dòng
+*/
+#render-data tr td span {
+    display: inline-block;
+    width: 130px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+input.border-red {
+    border: 1px solid red;
+}
+
+.active {
+    background-color: #019160 !important;
+}
+
+.title {
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: bold;
+    margin-bottom: 4px;
+}

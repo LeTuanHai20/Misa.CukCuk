@@ -1,0 +1,70 @@
+﻿/*Css chung cho navbar*/
+.m-navbar {
+    width: 220px;
+    height: 100vh;
+    border-right: 1px solid #E5E5E5;
+}
+
+    .m-navbar .logo-site {
+        width: 100%;
+        height: 60px;
+    }
+
+        .m-navbar .logo-site .logo-box {
+            padding: 16px 0 0 24px;
+            display: flex;
+        }
+
+            .m-navbar .logo-site .logo-box .toogle-icon {
+                width: 40px;
+                height: 30px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-image: url('/content/icon/toggle.png');
+            }
+
+            .m-navbar .logo-site .logo-box .amis-logo {
+                width: 100%;
+                height: 30px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-image: url('/content/img/amis-logo.png');
+            }
+           /* Css cho các thẻ ul li */
+    .m-navbar .nav-content {
+        width: 100%;
+    }
+
+        .m-navbar .nav-content .nav-item {
+            display: flex;
+            padding-left: 27px;
+            height: 44px;
+            cursor: pointer;
+            line-height: 44px;
+        }
+
+            .m-navbar .nav-content .nav-item:hover {
+                background-color: #BBBBBB;
+            }
+
+            .m-navbar .nav-content .nav-item .nav-item-icon {
+                width: 20px;
+                height: 20px;
+                align-self: center;
+                margin-right: 10px;
+                background-size: contain;
+            }
+            .m-navbar .nav-content .nav-item .nav-item-content a {
+                text-decoration: none;
+                color: black;
+                font-family: 'GoogleSans-Regular';
+            }
+            .m-navbar .nav-content .nav-item .nav-item-icon.icon-nav-1 {
+                background-image: url('/content/img/icons-nav-1.png');
+            }
+            .m-navbar .nav-content .nav-item .nav-item-icon.icon-nav-2 {
+                background-image: url('/content/img/icons-nav-2.png');
+            }
+            .m-navbar .nav-content .nav-item .nav-item-icon.icon-nav-3 {
+                background-image: url('/content/img/icons-nav-3.png');
+            }

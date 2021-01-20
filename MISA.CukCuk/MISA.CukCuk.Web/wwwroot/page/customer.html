@@ -1,0 +1,320 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MISACukCuk</title>
+    <link href="/lib/jquery-ui-1.12.1.custom/jquery-ui.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="/css/common/main.css" rel="stylesheet" />
+    <link href="/css/common/input.css" rel="stylesheet" />
+    <link href="/css/common/button.css" rel="stylesheet" />
+    <link href="/css/common/modal.css" rel="stylesheet" />
+    <link href="/css/common/loader.css" rel="stylesheet" />
+    <link href="/css/common/navbar.css" rel="stylesheet" />
+    <link href="/css/common/header.css" rel="stylesheet" />
+    <link href="/css/common/dialog.popup.css" rel="stylesheet" />
+    <link href="/css/common/content.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="main">
+        <div class="m-navbar">
+            <div class="logo-site">
+                <div class="logo-box">
+                    <div class="toogle-icon"></div>
+                    <div class="amis-logo"></div>
+                </div>
+            </div>
+            <div class="nav-content">
+                <div class="nav-item">
+                    <div class="nav-item-icon"></div>
+                    <div class="nav-item-content"><a href="#">Lập hồ sơ điện tử</a></div>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-item-icon"></div>
+                    <div class="nav-item-content"><a href="#">Lập hồ sơ giấy</a></div>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-item-icon"></div>
+                    <div class="nav-item-content"><a href="#">Theo dõi chi</a></div>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-item-icon"></div>
+                    <div class="nav-item-content"><a href="employee.html">Quản lý nhân viên</a></div>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-item-icon"></div>
+                    <div class="nav-item-content"><a href="customer.html">Quản lý khách hàng</a></div>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-item-icon"></div>
+                    <div class="nav-item-content"><a href="#">Thiết lập</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="header">
+                <div class="name-company">
+                    <div class="dropdown-btn">
+                        <div class="drop-content">Công ty cổ phần MISA TEST BHXH</div>
+                        <div class="caret-icon"></div>
+                    </div>
+                    <div class="dropdown-conent">
+                    </div>
+
+                </div>
+                <div class="profile">
+                    <div class="avatar"></div>
+                    <div class="name-profile">Demo AMIS BHXH</div>
+                    <div class="profile-icon"></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="header-content">
+                    <div class="name-page">Quản lý khách hàng</div>
+                    <div class="header-function">
+                        <div class="add-employee" id="btn-add-customer">
+                            <div class="icon-add-employee"><i class="fas fa-user-plus"></i></div>
+                            <div class="text-add-employee"><button>Thêm khách hàng</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-form">
+                    <div class="left-filter-form">
+                        <div class="search-name">
+                            <div class="icon-search"><i class="fas fa-search"></i></div>
+                            <div class="form-search">
+                                <input type="text" name="name" value="" placeholder="Tìm kiếm theo mã nhân viên, họ tên" />
+                            </div>
+                        </div>
+                        <div class="select-office">
+                            <div class="text-select">
+                                Chọn bộ phận phòng ban
+                            </div>
+                            <div class="icon-select-office"><button><i class="fas fa-caret-down"></i></button></div>
+                        </div>
+                        <div class="select-state">
+                            <div class="text-select">
+                                Trạng thái tham gia bảo hiểm xã hội
+                            </div>
+                            <div class="icon-select-state"><button><i class="fas fa-angle-down"></i></button></div>
+                        </div>
+                    </div>
+                    <div class="icon-right-filter-form">
+                        <div class="icon-remove">
+                            <button><i class="fas fa-trash-alt"></i></button>
+                        </div>
+                        <div class="icon-refresh">
+                            <button id="btn-refresh"><i class="fas fa-sync-alt"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-table">
+                    <div class="loader"></div>
+                    <table class="table" width="1600">
+                        <thead>
+                            <tr>
+                                <th width="150" fieldName="CustomerCode">Mã khách hàng</th>
+                                <th width="150" fieldName="FullName">Họ và tên</th>
+                                <th width="150" fieldName="DateOfBirth" formatType="ddmmyyyy" class="text-align-center">Ngày sinh</th>
+                                <th width="150" fieldName="PhoneNumber">Số điện thoại</th>
+                                <th width="200" fieldName="MemberCardCode">Số thẻ cá nhân</th>
+                                <th width="150" fieldName="GenderName">Giới tính</th>
+                                <th width="200" fieldName="Address">Địa chỉ</th>
+                                <th width="200" fieldName="CompanyName">Tên công ty</th>
+                                <th width="150" fieldName="CustomerGroupName">Nhóm khách hàng</th>
+                                <th width="150" fieldName="CompanyTaxCode">Mã số thuế</th>
+                            </tr>
+                        </thead>
+                        <tbody id="render-data">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="footer">
+                    <div class="left-footer">
+                        Hiển thị
+                        <b>
+                            1-15/59
+                        </b>
+                        lao động
+                    </div>
+                    <div class="panagition">
+                        <ul>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination-item pagination-item-active">
+                                <a href="#" class="pagination-item__link">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="choose-quantity-employee">
+                        <div class="quantity-employee-text">
+                            <span>15/trang</span>
+                        </div>
+                        <div class="quantity-employee-icon">
+                            <button><i class="fas fa-angle-down"></i></button>
+                        </div>
+                        <ul class="select-quantity-employee">
+                            <li class="quantity-employee-item"><a href="#">10/trang</a></li>
+                            <li class="quantity-employee-item"><a href="#">20/trang</a></li>
+                            <li class="quantity-employee-item"><a href="#">30/trang</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--html cho dialog-->
+    <div class="d-dialog-detail" title="Thông tin khách hàng" id="d-dialog" tabindex="-1">
+        <div class="d-dialog-modal"></div>
+        <div class="d-dialog-content">
+            <div class="d-header-dialog">
+                <div class="d-dialog-name">Thông tin khách hàng</div>
+                <div class="d-dialog-x" title="Thoát" id="d-btn-exit"></div>
+            </div>
+            <div class="top-dialog">
+                <div class="d-col">
+                    <div class="d-img">
+                        <div class="d-show-img"></div>
+                        <div class="d-note-img">
+                            Vui lòng chọn ảnh có định dạng <br><b>.jpg, .jpeg, .png, .gif. </b>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-col">
+                    <div class="d-same-row">
+                        <div class="d-customer-name d-left-row">
+                            <div class="first d-label"> Mã khách hàng (<span>*</span>)</div>
+                            <div class="form-input"><input type="text" name="Mã khách hàng" value="" required id="txtCustomerCode" bind-data="CustomerCode" /></div>
+                        </div>
+                        <div class="d-fullName">
+                            <div class="first d-label"> Họ và tên(<span>*</span>)</div>
+                            <div class="form-input"><input type="text" name="Họ tên" id="txtFullName" required bind-data="FullName" /></div>
+                        </div>
+                    </div>
+                    <div class="d-same-row">
+                        <div class="d-member-card-code d-left-row">
+                            <div class="d-label">Mã thẻ thành viên</div>
+                            <div class="form-input"><input type="text" name="name" id="txtMemberCardCode" bind-data="MemberCardCode" /></div>
+                        </div>
+                        <div class="d-group-customer">
+                            <div class="d-label"> Nhóm khách hàng <span>*</span></div>
+                            <div class="form-input">
+                                <select bind-data="CustomerGroupId" id="CustomerGroup" >
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-same-row">
+                        <div class="d-date-of-birth d-left-row">
+                            <div class="d-label">Ngày sinh</div>
+                            <div class="form-input"><input type="date" name="name" value="" id="dtDateOfBirth" bind-data="DateOfBirth" /></div>
+                        </div>
+                        <div class="d-gender">
+                            <div class="d-label">Giới tính</div>
+                            <div class="d-group-gender">
+                                <div class="d-same-row">
+                                    <div class="d-gender-male d-same-row">
+                                        <div class="form-input"><input type="radio" id="Male"  name="gender" value="1" bind-data="Gender" /></div>
+                                        <div class="d-gender-name">Nam</div>
+                                    </div>
+                                    <div class="d-gender-female d-same-row">
+                                        <div class="form-input"><input type="radio" id="feMale" name="gender" value="0" bind-data="Gender" /></div>
+                                        <div class="d-gender-name">Nữ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-bottom-dialog">
+                <div class="d-same-row">
+                    <div class="d-left-row">
+                        <div class="d-label">Email</div>
+                        <div class="form-input"><input type="email" name="name" placeholder="example@domain.com" id="txtEmail" bind-data="Email" /></div>
+                    </div>
+                    <div class="">
+                        <div class="d-label"> Số điện thoại(<span>*</span>)</div>
+                        <div class="form-input"><input type="tel" name="Số điện thoại" value="" id="txtPhoneNumber" required bind-data="PhoneNumber" /></div>
+                    </div>
+                </div>
+                <div class="d-same-row">
+                    <div class="d-left-row">
+                        <div class="d-label"> Tên công ty</div>
+                        <div class="form-input"><input type="text" name="name" value="" bind-data="CompanyName" /></div>
+                    </div>
+                    <div class="">
+                        <div class="d-label"> Mã số thuế</div>
+                        <div class="form-input"><input type="text" name="name" placeholder="Mã số thuế của công ty" bind-data="CompanyTaxCode" /></div>
+                    </div>
+                </div>
+                <div class="d-same-row">
+                    <div class="d-address">
+                        <div class="d-label">Địa chỉ</div>
+                        <div class="form-input"><input type="text" name="name" value="" id="txtAddress" bind-data="Address" /></div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-group-button">
+                <div class="d-same-row">
+                    <button id="d-btn-cancel" title="Hủy">Hủy</button>
+                    <button id="d-btn-save" title="Lưu"><span><i class="far fa-save"></i></span> Lưu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--html cho modal thông báo-->
+    <button id="myModal" style="display:none">Show</button>
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--html cho popup-->
+    <div class="p-pop-up">
+        <div class="pop-up-modal"></div>
+        <div class="pop-up-content">
+            <div class="pop-up-title"></div>
+            <div class="pop-up-body d-same-row">
+                <div class="pop-up-icon"></div>
+                <div class="pop-up-inf">
+                </div>
+            </div>
+            <div class="d-group-button d-same-row">
+                <button id="d-btn-cancel" class="pop-up-cancel" title="Hủy">Hủy</button>
+                <button id="btn-delete" title="Xóa">Xóa</button>
+            </div>
+        </div>
+    </div>
+    <script src="/lib/jquery-3.5.1.min.js"></script>
+    <script src="/lib/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="/js/common/common.js"></script>
+    <script src="/js/common/base.js"></script>
+    <script src="/js/page/customer.js"></script>
+</body>
+</html>

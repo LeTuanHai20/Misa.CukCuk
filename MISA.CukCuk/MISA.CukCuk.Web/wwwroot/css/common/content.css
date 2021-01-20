@@ -1,0 +1,403 @@
+﻿/**
+    Css cho Header content
+*/
+.right-content {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 221px);
+}
+
+    .right-content .content {
+        width: 100%;
+        height: calc(100% - 61px);
+    }
+        /*
+         * Căn thành một hàng và xác định chiều cao
+        */
+        .right-content .content .header-content {
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+        }
+
+            .right-content .content .header-content .header-content {
+                height: 40px;
+            }
+
+            .right-content .content .header-content .name-page {
+                font-size: 24px;
+                padding: 16px;
+            }
+            /*
+            * Css cho Header-function
+            */
+            .right-content .content .header-content .header-function {
+                display: flex;
+                margin-right: 20px;
+            }
+                /*
+                    Css cho các nút chức năng
+                */
+                .right-content .content .header-content .header-function .synchronized, .add-employee {
+                    align-self: center;
+                    height: 40px;
+                    margin-right: 20px;
+                    width: 170px;
+                    border: 1px solid #e5e5e5;
+                    border-radius: 5px;
+                    display: flex;
+                    text-align: center;
+                    line-height: 40px;
+                }
+
+                    .right-content .content .header-content .header-function .synchronized button {
+                        border: none;
+                        background-color: #ffffff;
+                        font-family: 'GoogleSans-Regular';
+                    }
+
+                .right-content .content .header-content .header-function .add-employee button {
+                    border: none;
+                    color: #ffffff;
+                    font-family: 'GoogleSans-Regular';
+                    background-color: #019160;
+                    height: 38px;
+                }
+
+                .right-content .content .header-content .header-function .synchronized:hover {
+                    background-color: #019160;
+                }
+
+                    .right-content .content .header-content .header-function .synchronized:hover button {
+                        background-color: #019160;
+                        color: white;
+                    }
+
+                .right-content .content .header-content .header-function .synchronized .synchronized-icon {
+                    font-size: 16px;
+                    color: aquamarine;
+                    margin-left: 16px;
+                    margin-right: 8px;
+                }
+
+                .right-content .content .header-content .header-function .synchronized .synchronized-name {
+                    color: #01b075;
+                }
+
+                .right-content .content .header-content .header-function .synchronized:hover .synchronized-name {
+                    color: #ffffff;
+                }
+
+                .right-content .content .header-content .header-function .add-employee {
+                    background-color: #019160;
+                    width: 166px;
+                    margin-right: 10px;
+                    display: flex;
+                    padding-right: 10px;
+                }
+
+                    .right-content .content .header-content .header-function .add-employee:hover {
+                        background-color: #2FBE8E;
+                    }
+
+                        .right-content .content .header-content .header-function .add-employee:hover button {
+                            background-color: #2FBE8E;
+                        }
+
+                    .right-content .content .header-content .header-function .add-employee .text-add-employee {
+                        color: #ffffff;
+                    }
+
+                    .right-content .content .header-content .header-function .add-employee .icon-add-employee {
+                        font-size: 16px;
+                        margin-left: 16px;
+                        margin-right: 8px;
+                        color: white;
+                    }
+        /*
+            Css cho filter-form
+        */
+        .right-content .content .filter-form {
+            display: flex;
+            justify-content: space-between;
+        }
+
+            .right-content .content .filter-form .left-filter-form {
+                display: flex;
+            }
+
+                .right-content .content .filter-form .left-filter-form .search-name {
+                    height: 32px;
+                    display: flex;
+                }
+
+                    .right-content .content .filter-form .left-filter-form .search-name .icon-search {
+                        font-size: 16px;
+                        position: relative;
+                        left: 32px;
+                        top: 8px;
+                    }
+
+                    .right-content .content .filter-form .left-filter-form .search-name .form-search {
+                    }
+
+                        .right-content .content .filter-form .left-filter-form .search-name .form-search input {
+                            width: 350px;
+                            text-indent: 24px;
+                            background-color: #ffffff;
+                            border: 1px solid #bbbbbb;
+                            border-radius: 5px;
+                            font-size: 13px;
+                            color: #000000;
+                        }
+
+                            .right-content .content .filter-form .left-filter-form .search-name .form-search input:focus {
+                                outline: none;
+                                border: 1px solid #019160;
+                                border-radius: 5px;
+                            }
+
+                .right-content .content .filter-form .left-filter-form .select-office {
+                    height: 40px;
+                    width: 200px;
+                    text-align: center;
+                    line-height: 40px;
+                    border: 1px solid #bbbbbb;
+                    border-radius: 5px;
+                    margin-left: 15px;
+                    justify-content: space-between;
+                    background-color: #ffffff;
+                    display: flex;
+                    padding-left: 16px;
+                }
+
+                    .right-content .content .filter-form .left-filter-form .select-office:hover {
+                        border: 1px solid #019160;
+                    }
+
+button.dropdown-toggle.select-office i {
+    font-size: 16px;
+    margin: 12px 12px;
+}
+
+.right-content .content .filter-form .icon-right-filter-form {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: antiquewhite;
+    margin-right: 30px;
+}
+
+    .right-content .content .filter-form .icon-right-filter-form .icon-remove button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        border-radius: 5px;
+        margin-right: 8px;
+        border: none;
+        background-color: red;
+        color: white;
+        position: absolute;
+        left: 1800px;
+        display: none;
+    }
+
+    .right-content .content .filter-form .icon-right-filter-form .icon-refresh button {
+        background-color: #ffffff;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        border: 1px solid #bbbbbb;
+        border-radius: 5px;
+    }
+
+        .right-content .content .filter-form .icon-right-filter-form .icon-refresh button:hover {
+            background-color: #bbbbbb;
+        }
+/**
+Css cho data-table
+*/
+.right-content .content .data-table {
+    height: 700px;
+    overflow: scroll;
+    margin-right: 30px;
+    margin-left: 16px;
+    margin-top: 16px;
+    overflow-x: auto;
+}
+
+    .right-content .content .data-table .table {
+        width: 1300px;
+        border-spacing: 0px;
+        table-layout: fixed;
+        border-collapse: separate;
+    }
+
+        .right-content .content .data-table .table tr {
+            height: 50px;
+        }
+
+tbody tr:nth-child(2n+1) {
+    background-color: #fafafa;
+}
+
+tbody tr:hover {
+    background-color: #d9d9d9;
+    cursor: pointer;
+}
+
+.right-content .content .data-table .table tr th {
+    border-bottom: 1px solid #bbbbbb;
+    text-align: left;
+    padding-bottom: 16px;
+    border-top: none;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: #ffffff;
+}
+
+.right-content .content .data-table .table tr td {
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #bbbbbb;
+    height: 50px;
+    padding-top: 16px;
+}
+
+.right-content .content .data-table .table tr:hover td {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+
+.right-content .content .data-table .table tr .employee-coefficient {
+    width: 140px;
+    text-align: right;
+    padding-right: 10px;
+}
+/**
+    Css cho footer
+*/
+.right-content .content .footer {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    margin-top: 20px;
+}
+
+    .right-content .content .footer .left-footer {
+        line-height: 56px;
+        margin-left: 24px;
+    }
+
+    /**
+    Css cho panagition
+*/
+    .right-content .content .footer .panagition {
+        align-self: center;
+        height: 56px;
+    }
+
+        .right-content .content .footer .panagition ul {
+            display: flex;
+        }
+
+            .right-content .content .footer .panagition ul li {
+                list-style: none;
+                text-align: center;
+                margin: 0px 21px 0 0;
+                height: 40px;
+                width: 40px;
+                border: 1px solid #bbbbbb;
+                border-radius: 50%;
+            }
+
+li.icon {
+    border: none !important;
+}
+
+    li.icon a.pagination-item__link {
+        font-size: 20px;
+    }
+
+.right-content .content .footer .panagition ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+/*
+                Css cho chọn số lượng nhân viên
+            */
+.right-content .content .footer .choose-quantity-employee {
+    line-height: 56px;
+    margin-right: 16px;
+    display: flex;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    position: relative;
+    align-self: center;
+}
+
+    .right-content .content .footer .choose-quantity-employee .quantity-employee-text {
+        align-self: center;
+        margin-left: 12px;
+    }
+
+    .right-content .content .footer .choose-quantity-employee .quantity-employee-icon {
+        align-self: center;
+        margin-right: 12px;
+        margin-left: 8px;
+    }
+
+        .right-content .content .footer .choose-quantity-employee .quantity-employee-icon button {
+            border: none;
+            background-color: #ffffff;
+            margin-left: 12px;
+            height: 0;
+        }
+
+    .right-content .content .footer .choose-quantity-employee .select-quantity-employee {
+        position: absolute;
+        height: 93px;
+        top: 20px;
+        border: 1px solid #e5e5e5;
+        border-bottom: none;
+        border-radius: 4px;
+        width: 100px;
+        padding: 0;
+        display: none;
+    }
+
+        .right-content .content .footer .choose-quantity-employee .select-quantity-employee .quantity-employee-item {
+            list-style: none;
+            width: 100px;
+            text-align: center;
+            height: 30px;
+            border-bottom: 1px solid #e5e5e5;
+            line-height: 30px;
+        }
+
+            .right-content .content .footer .choose-quantity-employee .select-quantity-employee .quantity-employee-item a {
+                text-decoration: none;
+                color: #000000;
+            }
+/*
+    Tạo active cho  trang được được xem
+*/
+.pagination-item-active {
+    background-color: #019160;
+}
+
+a.pagination-item__link {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0px 0px 0 -1px;
+    line-height: 40px;
+}
+
+li.pagination-item:hover {
+    background-color: #bbbbbb;
+}

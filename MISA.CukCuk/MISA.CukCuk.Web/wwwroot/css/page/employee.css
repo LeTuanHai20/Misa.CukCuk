@@ -1,0 +1,24 @@
+﻿// viết đè bootrap cho toolbar
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #019160;
+    color: white !important;
+}
+
+.dropdown-item.active, .dropdown-item {
+    height: 40px;
+    font-size: 13px;
+    color: #000000 !important;
+    line-height: 32px;
+}
+
+.dropdown-menu.show {
+    padding: 0;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}

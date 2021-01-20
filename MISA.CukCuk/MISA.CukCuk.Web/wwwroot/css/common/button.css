@@ -1,0 +1,58 @@
+﻿/*
+* Css cho button của dialog
+*/
+#d-btn-cancel, #d-btn-save, #btn-delete {
+    width: 81px;
+    height: 40px;
+    margin-left: 16px;
+    margin-top: 10px;
+    background-color: #01B075;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #bbbbbb;
+    font-size: 13px;
+    color: #ffffff;
+    text-align: left;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+    #d-btn-save span {
+        margin-right: 8px;
+    }
+
+.d-same-row #d-btn-cancel {
+    color: #000000;
+    background-color: #ffffff;
+    border: none;
+    text-align: center;
+}
+
+button#d-btn-cancel:focus {
+    background-color: #01B075 !important;
+}
+
+.d-same-row #d-btn-cancel:hover {
+    background-color: #E9EBEE;
+}
+
+#d-btn-save:hover {
+    background-color: #2FBE8E;
+}
+
+button#d-btn-save:focus {
+    background-color: #2FBE8E;
+}
+/*Css cho button xóa*/
+button#btn-delete {
+    text-align: center;
+    background-color: red;
+}
+
+    button#btn-delete:hover {
+        background-color: #F65454;
+    }
+
+.right-content .content .filter-form .icon-right-filter-form .icon-remove button:hover {
+    background: #F65454;
+}

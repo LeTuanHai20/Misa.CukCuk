@@ -1,0 +1,223 @@
+﻿/*Css cho phần khung dialog*/
+.d-dialog-detail, .p-pop-up {
+    display: none;
+}
+/* css chung cho css pop-up và dialog*/
+.d-dialog-modal, .pop-up-modal {
+    position: fixed;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 10;
+    display: none;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.d-dialog-content, .pop-up-content {
+    position: absolute;
+    width: 860px;
+    height: 842px;
+    z-index: 50;
+    top: calc(50% - 455px);
+    left: calc(50% - 430px);
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+    .d-dialog-content .d-dialog-name {
+        font-size: 24px;
+        margin: 24px;
+        text-transform: uppercase;
+    }
+
+    .d-dialog-content .d-dialog-x {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-image: url('/content/icon/x.svg');
+        width: 40px;
+        height: 40px;
+        border-radius: 0 5px 0 0;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        opacity: .7;
+        background-color: #ffffff;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20px;
+    }
+
+        .d-dialog-content .d-dialog-x:hover {
+            background-color: #ccc;
+        }
+/*Css cho phần hình đại diện*/
+.d-img .d-show-img {
+    width: 180px;
+    height: 180px;
+    background-image: url('/content/img/default-avatar.jpg');
+    border-radius: 50%;
+    background-size: contain;
+    border: 1px solid #bbbbbb;
+    background-repeat: no-repeat;
+}
+
+.d-img .d-note-img {
+    text-align: center;
+    width: 200px;
+}
+/*Css cho phần từ input email trở lên*/
+.form-input {
+    width: 289px;
+}
+
+.d-general-inf, .d-work-inf h3 {
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.d-main-content-dialog {
+    display: flex;
+}
+
+.d-dialog-content .left-dialog {
+    margin: 0 24px 0 16px;
+}
+
+    .d-dialog-content .left-dialog .d-col {
+        margin-left: 8px;
+    }
+
+.d-left-row {
+    margin-right: 10px;
+}
+
+.d-work-inf {
+    margin-top: 24px;
+}
+/*Css cho từ email đổ xuống*/
+.d-right-dialog {
+    width: 100%;
+    margin-right: 24px;
+}
+/*Css cho phần button*/
+.d-group-button {
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 24px;
+    margin-top: 24px;
+    position: relative;
+    background-color: #bbbbbb;
+    width: 860px;
+    right: 248px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 1000;
+}
+    /*css cho riêng pop-up*/
+    .d-group-button.pop-up {
+        width: 100%;
+        position: initial;
+    }
+
+.pop-up-content {
+    width: 400px;
+    height: 192px;
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
+}
+
+.pop-up-title {
+    font-size: 15px;
+    margin: 24px;
+    font-weight: bold;
+}
+
+.pop-up-body.d-same-row {
+    margin-left: 24px;
+    font-size: 13px;
+    margin-bottom: 24px;
+    margin-right: 24px;
+}
+
+.pop-up-button.d-same-row {
+    justify-content: flex-end;
+}
+/*css định nghĩa lại thư viện jqueryUI*/
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+    border-radius: 5px;
+}
+
+.ui-dialog {
+    padding: 0;
+}
+
+    .ui-dialog .ui-dialog-titlebar {
+        padding: 24px 24px 0px 24px;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: #FFFFFF;
+        border: none;
+    }
+
+    .ui-dialog .ui-dialog-titlebar-close {
+        margin: unset;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 0 5px 0 0;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        opacity: .7;
+        background-color: #FFFFFF;
+        background-image: url('/content/icon/x.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20px;
+    }
+
+        .ui-dialog .ui-dialog-titlebar-close:hover {
+            background-color: #ccc;
+        }
+
+.ui-button .ui-icon, .ui-button .ui-icon:hover {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+.ui-dialog .ui-dialog-content {
+    padding: 0;
+}
+
+.ui-widget.ui-widget-content {
+    border: unset;
+}
+
+.ui-button:hover .ui-icon {
+    background-image: none;
+}
+
+.ui-widget-overlay {
+    background-color: #000;
+    opacity: .5;
+}
+
+div#d-dialog {
+    overflow: hidden;
+}
+
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable {
+    top: 36.5px;
+}

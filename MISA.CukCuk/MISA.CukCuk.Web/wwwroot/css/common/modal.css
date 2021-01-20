@@ -1,0 +1,16 @@
+﻿/*Css cho modal*/
+.modal {
+    top: 0;
+    bottom: auto;
+    right: 10px;
+    left: auto;
+    padding: 0 16px;
+}
+
+.modal-content {
+    background-color: #7ae873;
+}
+
+#myModel {
+    visibility: hidden;
+}
